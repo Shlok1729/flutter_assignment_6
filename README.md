@@ -1,16 +1,48 @@
-# assignment6a
+# 📖 Random Quote Generator - Flutter App
 
-A new Flutter project.
+A simple Flutter app that fetches a random quote from the internet and displays it beautifully.  
+This app demonstrates how to make HTTP requests, parse JSON, and update the UI in real time.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🌐 API Used
 
-A few resources to get you started if this is your first Flutter project:
+We used the [DummyJSON Quotes API](https://dummyjson.com/docs/quotes) — specifically:
+https://dummyjson.com/quotes/random
+Let me know if you'd like:
+- Help creating or uploading the screenshot
+- A video preview for README
+- To deploy this as a Flutter Web version for sharing online
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- ⚙️ JSON Parsing Logic
+We decode the response using json.decode() from Dart's dart:convert library:
+final data = json.decode(response.body);
+_quote = data['quote'];
+_author = data['author'];
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🚀 How to Run
+bash
+Copy
+Edit
+git clone https://github.com/your-username/quote-app-dummyjson.git
+cd quote-app-dummyjson
+flutter pub get
+flutter run
+
+ScreenShot :
+
+
+This returns a single random quote like:
+
+```json
+{
+  "id": 5,
+  "quote": "All you need in this life is ignorance and confidence, and then success is sure.",
+  "author": "Mark Twain"
+}
+
+
+
+
+---
+
