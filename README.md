@@ -30,7 +30,8 @@ flutter pub get
 flutter run
 
 ScreenShot :
-
+<img width="1915" height="977" alt="Image" src="https://github.com/user-attachments/assets/037572d1-8d51-462b-8976-8882f34e4f2c" />
+<img width="1907" height="969" alt="Image" src="https://github.com/user-attachments/assets/54807738-737a-4d39-8bbb-76a78daa7886" />
 
 This returns a single random quote like:
 
